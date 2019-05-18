@@ -1,48 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="assets/javascript/game.js"></script>
-  
-  <title>simple crystal game</title>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
 </head>
 <body>
 
-  
-
-  <!-- BOXES  -->
-  <!-- ========================================= -->
-  <div class="title">
-    <p>Crystals Collector!</p>
-  </div>
-
-  <div class="about">
-    About:
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-  </div>
-  
-  <div class="numToGuess">
-      <p>Number to Guess: <span id="number-to-guess"></span></p>
-  </div>
-
-  <div class="winsLosses">
-    Wins:
-    <br>
-    Losses:
-  </div>
-
-  <div class="crystals">
-    <!-- <input class="butt1" type="image" src="assets/images/yellowgem.png"></input> -->
-    <!-- <input class="butt2" type="image" src="assets/images/red gem.png"></input> -->
-    <!-- <input class="butt3" type="image" src="assets/images/blue gem.png"></input> -->
-    <!-- <input class="butt4" type="image" src="assets/images/greengem.jpeg""></input> -->
-  </div>
-  <div class="totalScore">Total Score:</div>
-  
+    <div class="header">
+        <h1>Crystal Collector</h1>
+    </div>
+    <div class="instructions">
+        <h3>Rules of the Game</h3>
+        <br>
+        <ol>
+            <li>You will be given a random number at the start of the game. <span>"Number to get"</span></li>
+            <li>There are four crystals below</li>
+            <ul>
+                <li id="Red">Red</li>
+                <li id="Yellow">Yellow</li>
+                <li id="Blue">Blue</li>
+                <li id="Green">Green</li>
+            </ul>
+            <li>By clicking on a crystal, you will add a specific amount of points to your total score.</li>
+			<li>You win the game by matching your total score to the random number.</li>
+			<li>You lose the game if your total score goes above the random number.</li>
+			<li>The value of each crystal is hidden from you until you click on it.</li>
+			<li>Each time when the game starts, the game will change the values of each crystal.</li>
+        </ol>
+    </div>
+    <div class="numberToMatch">
+        <h2>Number to Get:
+            <span id="randomNumber"></span>
+        </h2>
+    </div>
+    <div class="winsAndLosses">
+        <h2>Wins 
+            <span id="numberWins"></span>
+            <br>
+        </h2>
+        <h2>Losses 
+            <span id="numberLosses"></span>
+        </h2>
+    </div>
+    <div class="gems">
+        <img src="assets/images/red.png" class="gemImage" id="one" alt="Red Gem">
+        <img src="assets/images/yellow.png" class="gemImage" id="two" alt="Yellow Gem">
+        <img src="assets/images/blue.png" class="gemImage" id="three" alt="Blue Gem">
+        <img src="assets/images/green.png" class="gemImage" id="four" alt="Green Gem">
+    </div>
+    <div class="userTotal">
+        <h2>Your total score is 
+            <span id=finalTotal></span>
+        </h2>
+    </div>
 </body>
-</html> 
+</html>
