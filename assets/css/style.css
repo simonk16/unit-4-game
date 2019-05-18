@@ -1,53 +1,59 @@
-.crystal-image {
-    width: 100px;
-    height: 100px;
-  }
-  .title {
-    border: solid;  
-    height: 100px;
-    width: 100px;
-    background-color: #fff;
-  }
-  .numToGuess {
-    display: inline-block;
-    border: solid;  
-    background-color: #fff;
-      width: 100px;
-      height: 100px;
-  }
-
- 
-.winsLosses {
-    display: inline-block;
-    border: solid;
-    background-color: aqua;
-    width: 100px;
-    height: 100px;
+ body {
+    background-image: url("../images/bluebackground.png")
 }
-
-.butt3 {
-    height: 100px;
-    width: 100px;
+div {
+    background-color: white;
+    margin: 10px;
+    width: 25%;
 }
-
-.butt4 {
-    height: 100px;
-    width: 100px;
+div {
+    border: solid 2px whitesmoke;
+    padding: 10px;
 }
-
-.butt2 {
-    height: 100px;
-    width: 100px;
+h1, h3, span {
+    font-weight: bold;
+    text-align: center;
 }
-
-.butt1 {
-    height: 100px;
-    width: 100px;
+h1 {
+    font-size: 30pt;
 }
-
-.totalScore {
-    height: 100px;
-    width: 100px;
-    border: solid;
+ol {
+    list-style: decimal inside;
 }
-  
+ul {
+    list-style: disc inside;
+}
+div.header, div.gems {
+    background-color: white;
+}
+div.header, div.instructions{
+	width: 50%;
+}
+.numberToMatch, .winsAndLosses{
+	float: left;
+	width: 15%;
+	height: 60px;
+}
+.userTotal{
+	width: 15%;
+	height: 60px;
+}
+.gems{
+	clear: both;
+}
+.gemImage{
+	height: 60px;
+	margin: 10px;
+}
+#blue{
+	color: blue;
+}
+#green{
+	color: green;
+}
+#red{
+	color: red;
+}
+#yellow{
+	color: yellow;
+}
