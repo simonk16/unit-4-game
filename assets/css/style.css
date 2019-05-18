@@ -1,0 +1,53 @@
+.crystal-image {
+    width: 100px;
+    height: 100px;
+  }
+  .title {
+    border: solid;  
+    height: 100px;
+    width: 100px;
+    background-color: #fff;
+  }
+  .numToGuess {
+    display: inline-block;
+    border: solid;  
+    background-color: #fff;
+      width: 100px;
+      height: 100px;
+  }
+
+ 
+.winsLosses {
+    display: inline-block;
+    border: solid;
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+}
+
+.butt3 {
+    height: 100px;
+    width: 100px;
+}
+
+.butt4 {
+    height: 100px;
+    width: 100px;
+}
+
+.butt2 {
+    height: 100px;
+    width: 100px;
+}
+
+.butt1 {
+    height: 100px;
+    width: 100px;
+}
+
+.totalScore {
+    height: 100px;
+    width: 100px;
+    border: solid;
+}
+  
